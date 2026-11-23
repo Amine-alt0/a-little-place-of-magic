@@ -1,0 +1,41 @@
+services:
+  # 1. Backend API (Node.js Express Web Service)
+  - type: web
+    name: a-little-place-of-magic-backend
+    runtime: node
+    plan: free
+    region: frankfurt # Low-latency EU region matching Supabase eu-west-3
+    rootDir: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SUPABASE_URL
+        value: https://fwtdhyxdpifgirdqauhn.supabase.co
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: ADMIN_ACCESS_TOKEN
+        value: brother-safe-haven-key
+
+  # 2. Frontend UI (Static Site on CDN)
+  - type: web
+    name: a-little-place-of-magic-frontend
+    runtime: static
+    plan: free
+    region: frankfurt
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      # SPA rewrite rule so refreshing subpaths loads index.html
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_SUPABASE_URL
+        value: https://fwtdhyxdpifgirdqauhn.supabase.co
+      - key: VITE_SUPABASE_ANON_KEY
+        sync: false
