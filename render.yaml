@@ -20,12 +20,10 @@ services:
       - key: ADMIN_ACCESS_TOKEN
         value: brother-safe-haven-key
 
-  # 2. Frontend UI (Static Site on CDN)
+  # 2. Frontend UI (Static Site on Global CDN)
   - type: web
     name: a-little-place-of-magic-frontend
     runtime: static
-    plan: free
-    region: frankfurt
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
