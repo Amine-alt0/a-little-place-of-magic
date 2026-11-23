@@ -6,7 +6,7 @@ services:
     plan: free
     region: frankfurt # Low-latency EU region matching Supabase eu-west-3
     rootDir: backend
-    buildCommand: npm install && npm run build
+    buildCommand: npm install --include=dev && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
@@ -25,7 +25,7 @@ services:
     name: a-little-place-of-magic-frontend
     runtime: static
     rootDir: frontend
-    buildCommand: npm install && npm run build
+    buildCommand: npm install --include=dev && npm run build
     staticPublishPath: dist
     routes:
       # SPA rewrite rule so refreshing subpaths loads index.html
