@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="184" height="119.6" viewBox="0 0 184 119.6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Closed envelope" clip-path="url(#clip0_0_108)">
+<path id="Envelope body" d="M0 28H184V116H0V28Z" fill="#F1E6D0" stroke="black"/>
+<path id="Folded sides" d="M0 28L92 82L184 28V116H0V28Z" fill="#E5D6BA" stroke="black"/>
+<path id="Envelope flap" d="M0 28H184L92 84L0 28Z" fill="#FFF9EF" stroke="black"/>
+<circle id="Burgundy wax seal" cx="92" cy="80" r="16" fill="#642F43"/>
+<g id="A little spark">
+<path id="Vector" d="M92 74.0417L93.4625 78.5375L97.9583 80L93.4625 81.4625L92 85.9583L90.5375 81.4625L86.0417 80L90.5375 78.5375L92 74.0417Z" fill="#C5A66A"/>
+<path id="Vector_2" d="M96.875 75.6667C97.1742 75.6667 97.4167 75.4242 97.4167 75.125C97.4167 74.8258 97.1742 74.5833 96.875 74.5833C96.5758 74.5833 96.3333 74.8258 96.3333 75.125C96.3333 75.4242 96.5758 75.6667 96.875 75.6667Z" fill="#C5A66A"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_108">
+<rect width="184" height="119.6" fill="white"/>
+</clipPath>
+</defs>
+</svg>

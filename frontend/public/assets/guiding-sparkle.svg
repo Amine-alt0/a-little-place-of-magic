@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Guiding sparkle" clip-path="url(#clip0_0_4)">
+<path id="Vector" d="M20 3L24 16L37 20L24 24L20 37L16 24L3 20L16 16L20 3Z" stroke-width="1.4" stroke="#642F43"/>
+<path id="Vector_2" d="M33 7.5C33.8284 7.5 34.5 6.82843 34.5 6C34.5 5.17157 33.8284 4.5 33 4.5C32.1716 4.5 31.5 5.17157 31.5 6C31.5 6.82843 32.1716 7.5 33 7.5Z" fill="#C5A66A"/>
+</g>
+<defs>
+<clipPath id="clip0_0_4">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>
